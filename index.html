@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de smartphones HY TECH com aparelhos novos, seminovos e usados.">
+  <title>HY TECH | Catálogo de Smartphones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="catalog">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="HY TECH">
+        <img class="logo-img" src="assets/logo.png" alt="HY TECH" onerror="this.style.display='none'">
+        <span class="brand-icon" aria-hidden="true">HY</span>
+        <span class="brand-copy">
+          <strong><span>HY</span> TECH</strong>
+          <small>Tecnologia que conecta você</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a class="active" href="#inicio">INÍCIO</a>
+        <a href="#aparelhos">APARELHOS</a>
+        <a href="#como-comprar">COMO COMPRAR</a>
+        <a href="#contato">CONTATO</a>
+        <a href="admin.html">ADMIN</a>
+      </nav>
+
+      <a class="btn btn-whatsapp header-whatsapp" id="headerWhatsapp" href="#" target="_blank" rel="noopener">
+        FALAR NO WHATSAPP
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-offset" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Catálogo HY TECH</p>
+          <h1>
+            ESCOLHA SEU <span>SMARTPHONE</span>
+          </h1>
+          <p class="hero-text">
+            Aparelhos novos e seminovos com procedência. Filtre por modelo, linha, capacidade ou condição.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#aparelhos">VER APARELHOS</a>
+            <a class="btn btn-secondary" href="admin.html">ADMIN</a>
+          </div>
+
+          <div class="benefits" aria-label="Benefícios">
+            <article>
+              <strong>PROCEDÊNCIA</strong>
+              <span>Qualidade</span>
+            </article>
+            <article>
+              <strong>ENTREGA RÁPIDA</strong>
+              <span>Consulte</span>
+            </article>
+            <article>
+              <strong>PAGAMENTO SEGURO</strong>
+              <span>Opções flexíveis</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters-section" id="aparelhos">
+      <div class="container">
+        <form class="filters-panel" id="filtersForm" aria-label="Filtros do catálogo">
+          <label>
+            <span>Buscar modelo</span>
+            <input type="search" id="searchInput" placeholder="Ex: iPhone 15 Pro">
+          </label>
+
+          <label>
+            <span>Linha</span>
+            <select id="lineFilter">
+              <option value="">Todas</option>
+              <option value="11">iPhone 11</option>
+              <option value="12">iPhone 12</option>
+              <option value="13">iPhone 13</option>
+              <option value="14">iPhone 14</option>
+              <option value="15">iPhone 15</option>
+              <option value="16">iPhone 16</option>
+              <option value="17">iPhone 17</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Capacidade</span>
+            <select id="capacityFilter">
+              <option value="">Todas</option>
+              <option value="64GB">64GB</option>
+              <option value="128GB">128GB</option>
+              <option value="256GB">256GB</option>
+              <option value="512GB">512GB</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Condição</span>
+            <select id="conditionFilter">
+              <option value="">Todas</option>
+              <option value="Novo">Novo</option>
+              <option value="Seminovo">Seminovo</option>
+              <option value="Usado">Usado</option>
+            </select>
+          </label>
+
+          <button class="btn btn-filter" type="button" id="clearFilters">LIMPAR FILTROS</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Estoque HY TECH</p>
+          <h2>APARELHOS <span>DISPONÍVEIS</span></h2>
+        </div>
+
+        <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+
+        <div class="catalog-more">
+          <a class="btn btn-secondary" href="#aparelhos">VER MAIS APARELHOS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="como-comprar">
+      <div class="container">
+        <div class="how-card">
+          <div class="how-heading">
+            <p class="eyebrow">Compra simples e segura</p>
+            <h2>COMO FUNCIONA</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <span>01</span>
+              <h3>ESCOLHA O APARELHO</h3>
+              <p>Confira modelo, capacidade, condição e valor no catálogo.</p>
+            </article>
+            <article class="step-card">
+              <span>02</span>
+              <h3>FALE CONOSCO</h3>
+              <p>Use o WhatsApp para tirar dúvidas e iniciar o atendimento.</p>
+            </article>
+            <article class="step-card">
+              <span>03</span>
+              <h3>CONFIRME DISPONIBILIDADE</h3>
+              <p>Validamos estoque, garantia e melhores opções para você.</p>
+            </article>
+            <article class="step-card">
+              <span>04</span>
+              <h3>FINALIZE SUA COMPRA</h3>
+              <p>Combine pagamento, retirada ou entrega com a equipe HY TECH.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#inicio" aria-label="HY TECH">
+          <img class="logo-img" src="assets/logo.png" alt="HY TECH" onerror="this.style.display='none'">
+          <span class="brand-icon" aria-hidden="true">HY</span>
+          <span class="brand-copy">
+            <strong><span>HY</span> TECH</strong>
+            <small>Tecnologia que conecta você</small>
+          </span>
+        </a>
+        <p>
+          Smartphones selecionados com procedência, atendimento próximo e experiência de compra premium.
+        </p>
+      </div>
+
+      <div>
+        <h3>Links rápidos</h3>
+        <a href="#inicio">Início</a>
+        <a href="#aparelhos">Aparelhos</a>
+        <a href="#como-comprar">Como comprar</a>
+        <a href="admin.html">Admin</a>
+      </div>
+
+      <div>
+        <h3>Atendimento</h3>
+        <p>WhatsApp HY TECH</p>
+        <p>Segunda a sábado</p>
+        <p>Consulte horários e condições.</p>
+      </div>
+
+      <div>
+        <h3>Redes sociais</h3>
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 HY TECH. Todos os direitos reservados.</p>
+      <p>Estoque sujeito à disponibilidade. Imagens meramente ilustrativas.</p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" id="floatingWhatsapp" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    WA
+  </a>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
